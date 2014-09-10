@@ -22,13 +22,13 @@ body {
     border-bottom: 1px solid white;
 }
 
-img {
+.falldown {
     width: 200px;
     height: 250px;
-    transition: height 1s ease;
+    transition: height 0.5s ease;
 }
 
-img:hover {
+.falldown:hover {
     height: 260px;
 }
 
@@ -40,12 +40,78 @@ img:hover {
     float: left;
 }
 
-#footer {
-    position: absolute;
+a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 50px;
-    border: 1px solid black;
-    background-color: #ee5;
+    height: 60px;
+    background-color: #102624;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+footer h2 {
+    text-align: center;
+}
+
+.Navigation {
+    position: relative;
+    margin-right: 50px;
+    display: table;
+    float: left;    
+}
+
+.infopic {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.infopicdiv {
+    position: relative;
+    top: 100px;
+    right: 880px;
+    width: 0;
+    height: 0;
+}
+
+p {
+    color:white;
+    padding: 5px;
+    position: relative;
+    top: -45px;
+}
+
+.infotext {
+    position: relative;
+    left: 450px;
+    top: 83px;
+    width: 500px;
+    height: 300px;
+    background-color: #1B1C3C;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+#picover {
+    position: relative;
+    left: -4px;
+    width: 400px;
+    background-color: gray;
+    text-align: center;
+    color: black;
+}
+
+.Nav {
+    transition: color 0.5s ease;
+}
+
+.Nav:hover {
+    color: #497B2B;
 }
